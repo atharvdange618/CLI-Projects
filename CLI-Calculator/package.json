@@ -1,0 +1,12 @@
+{
+  "name": "cli-calculator",
+  "version": "1.0.0",
+  "description": "A simple NodeJS based CLI calculator",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Atharv Dange",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
+}
