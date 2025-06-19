@@ -2,7 +2,7 @@
 
 > A beautiful, safe, and fast CLI to organize files into folders by type — images, documents, videos, and more.
 
-![screenshot](https://your-screenshot-url-if-you-have-one.com) <!-- optional -->
+![screenshot](image.png)
 
 ---
 
@@ -72,6 +72,7 @@ You'll see a breakdown like:
 | Videos    | `.mp4`, `.avi`, `.mkv`, `.mov`                   |
 | Audio     | `.mp3`, `.wav`                                   |
 | Archives  | `.zip`, `.tar`, `.gz`, `.rar`                    |
+| Code      | `.js`, `.ts`, `.tsx`, `.jsx`, `.css`, `.html`    |
 | Others    | Everything else                                  |
 
 ---
