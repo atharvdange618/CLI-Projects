@@ -1,9 +1,9 @@
 {
-  "name": "file-organizer-cli",
+  "name": "bucketize",
   "version": "1.0.0",
   "description": "CLI tool to organize files into folders by type (images, documents, etc)",
   "bin": {
-    "organize": "./bin/index.js"
+    "bucketize": "bin/index.js"
   },
   "type": "module",
   "author": "Atharv",

@@ -1,4 +1,4 @@
-# 📁 file-organizer-cli
+# 📁 bucketize
 
 > A beautiful, safe, and fast CLI to organize files into folders by type — images, documents, videos, and more.
 
@@ -20,7 +20,7 @@
 ## 📦 Installation
 
 ```bash
-npm install -g file-organizer-cli
+npm install -g bucketize
 ```
 
 ````
@@ -30,13 +30,13 @@ npm install -g file-organizer-cli
 ## 🧱 Usage
 
 ```bash
-organize <directory>
+bucketize <directory>
 ```
 
 Example:
 
 ```bash
-organize ./Downloads
+bucketize ./Downloads
 ```
 
 You'll see a breakdown like:
@@ -81,7 +81,7 @@ You'll see a breakdown like:
 After execution, a log file is saved to:
 
 ```
-logs/YYYY-MM-DD-HHmmss.log
+YYYY-MM-DD-HHmmss.log
 ```
 
 Example line in log:
@@ -110,8 +110,4 @@ PRs, issues, and ideas welcome!
 ## 🧾 License
 
 MIT © [Atharv](https://github.com/atharvdange618)
-
-```
-
-```
 ````
