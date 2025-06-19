@@ -1,11 +1,7 @@
 import fs from "fs-extra";
 import path from "path";
 import chalk from "chalk";
-import { fileURLToPath } from "url";
 import { writeLog } from "./logger.js";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const EXTENSION_MAP = {
   Images: [".png", ".jpg", ".jpeg", ".gif", ".bmp", ".svg", "webp"],
@@ -70,7 +66,7 @@ export async function organizeDirectory(targetDir, options = {}) {
       dryRun,
     });
   }
-  await writeLog(actions, dryRun);
+  await writeLog(actions, dryRun, targetDir);
 }
 
 export async function scanDirectory(targetDir) {

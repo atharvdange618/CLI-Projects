@@ -6,14 +6,13 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const logsDir = path.join(__dirname, "..", "logs");
-
-export async function writeLog(actions, dryRun = false) {
-  await fs.ensureDir(logsDir);
+export async function writeLog(actions, dryRun = false, logsDir = null) {
+  const logsDirectory = logsDir || path.join(__dirname, "..", "logs");
+  await fs.ensureDir(logsDirectory);
 
   const timestamp = dayjs().format("YYYY-MM-DD-HHmmss");
   const logFile = path.join(
-    logsDir,
+    logsDirectory,
     `${dryRun ? "dryrun-" : ""}${timestamp}.log`
   );
 
